@@ -16,16 +16,16 @@ try:
     transactions.append([data[0], data[1], int(data[2]), data[3],data[4]])
  
     if data[3] == "収入":
-      totali = totali + int(data[2])
+      totali += int(data[2])
 
     if data[3] == "支出":
-      totale = totale + int(data[2])
+      totale += int(data[2])
 
     if data[3] == "投資":
-      totalinv = totalinv + int(data[2])
+      totalinv += int(data[2])
 
     if data[3] == "貯金":
-      totals = totals + int(data[2])
+      totals += int(data[2])
 
   file.close()
 except FileNotFoundError:
